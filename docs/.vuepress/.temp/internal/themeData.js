@@ -1,0 +1,14 @@
+export const themeData = JSON.parse("{\"logo\":\"https://vuejs.press/images/hero.png\",\"navbar\":[{\"text\":\"Home\",\"link\":\"/\"},{\"text\":\"get\",\"link\":\"/get-started\"},{\"text\":\"SQL\",\"link\":\"/content/SQL/\"}],\"sidebar\":{\"/content/SQL/\":[{\"text\":\"SQL — Basics\",\"collapsible\":false,\"children\":[\"/content/SQL/\",\"/content/SQL/01-chapter/\",\"/content/SQL/02-chapter/\",\"/content/SQL/03-chapter/\",\"/content/SQL/04-chapter/\",\"/content/SQL/05-chapter/\",\"/content/SQL/06-chapter/\",\"/content/SQL/07-chapter/\",\"/content/SQL/08-chapter/\",\"/content/SQL/09-chapter/\",\"/content/SQL/10-chapter/\"]},{\"text\":\"SQL — Advanced\",\"collapsible\":true,\"children\":[\"/SQL/05-indexing/indexes\",\"/SQL/06-performance/query-plan\",\"/SQL/07-security/permissions-and-sql-injection\",\"/SQL/08-exercises/practice-queries\"]},{\"text\":\"Examples & Cheatsheets\",\"collapsible\":true,\"children\":[\"/SQL/99-cheatsheet/sql-cheatsheet\",\"/SQL/99-cheatsheet/common-patterns\"]}],\"/content/csharp/\":[\"\",\"/content/csharp/01-basics/variables\",\"/content/csharp/02-oop/classes\"]},\"sidebarDepth\":2,\"locales\":{\"/\":{\"selectLanguageName\":\"English\"}},\"colorMode\":\"auto\",\"colorModeSwitch\":true,\"repo\":null,\"selectLanguageText\":\"Languages\",\"selectLanguageAriaLabel\":\"Select language\",\"editLink\":true,\"editLinkText\":\"Edit this page\",\"lastUpdated\":true,\"contributors\":true,\"contributorsText\":\"Contributors\",\"notFound\":[\"There's nothing here.\",\"How did we get here?\",\"That's a Four-Oh-Four.\",\"Looks like we've got some broken links.\"],\"backToHome\":\"Take me home\",\"openInNewWindow\":\"open in new window\",\"toggleColorMode\":\"toggle color mode\",\"toggleSidebar\":\"toggle sidebar\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateThemeData) {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ themeData }) => {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  })
+}

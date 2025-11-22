@@ -1,0 +1,376 @@
+/* ===========================================
+   SELF-HOSTED FONTS
+   Place font files in: docs/.vuepress/public/fonts/
+   =========================================== */
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===========================================
+   OVERRIDE DEFAULT THEME VARIABLES
+   =========================================== */
+
+:root {
+  --font-family: 'Lexend', system-ui, sans-serif !important;
+  --font-family-code: 'JetBrains Mono', monospace !important;
+
+  /* VuePress theme-default specific variables */
+  --vp-font-family-base: 'Lexend', system-ui, sans-serif !important;
+  --vp-font-family-mono: 'JetBrains Mono', monospace !important;
+
+  /* Extra fallbacks */
+  --c-text-font-family: 'Lexend', system-ui, sans-serif !important;
+  --code-font-family: 'JetBrains Mono', monospace !important;
+
+  /* Typography */
+  --base-font-size: 16px;
+  --base-line-height: 1.65;
+  --code-font-size: 0.92rem;
+}
+
+/* ===========================================
+   GLOBAL TYPOGRAPHY
+   =========================================== */
+
+* {
+  font-family: 'Lexend', system-ui, sans-serif !important;
+}
+
+html,
+body,
+#app,
+.theme-container,
+.theme-default-content,
+.page,
+.content,
+main,
+article,
+section,
+div,
+span,
+p,
+li,
+a,
+button,
+input,
+textarea,
+select {
+  font-family: 'Lexend', system-ui, sans-serif !important;
+}
+
+body {
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.theme-default-content h1,
+.theme-default-content h2,
+.theme-default-content h3,
+.theme-default-content h4,
+.theme-default-content h5,
+.theme-default-content h6,
+.page-title,
+.sidebar-heading {
+  font-family: 'Lexend', system-ui, sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* Nav + sidebar */
+.navbar,
+.navbar *,
+.sidebar,
+.sidebar *,
+.nav-links,
+.nav-links * {
+  font-family: 'Lexend', system-ui, sans-serif !important;
+}
+
+/* ===========================================
+   CODE FONTS (GLOBAL)
+   =========================================== */
+
+code,
+pre,
+kbd,
+samp,
+tt,
+var,
+.token,
+code *,
+pre *,
+.code,
+.hljs,
+[class*='language-'],
+[class*='language-'] *,
+div[class*='language-'],
+div[class*='language-'] *,
+div[class*='language-'] code,
+div[class*='language-'] pre,
+.theme-default-content code,
+.theme-default-content pre,
+.theme-default-content code *,
+.theme-default-content pre * {
+  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+}
+
+/* Extra safety for line-number wrappers (if any left) */
+.line-numbers-wrapper,
+.line-numbers-wrapper * {
+  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+}
+
+/* ===========================================
+   PARAGRAPHS & INLINE CODE
+   =========================================== */
+
+p {
+  margin: 0 0 1em 0;
+  max-width: 72ch;
+}
+
+/* Inline code */
+p code,
+li code,
+td code,
+th code {
+  background: rgba(62, 109, 156, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  font-size: 0.9em;
+}
+
+/* ===========================================
+   CODE BLOCKS – ChatGPT-like layout
+   =========================================== */
+
+/* Outer wrapper */
+.theme-default-content div[class*='language-'] {
+  position: relative;
+  margin: 1.25rem 0;
+  border-radius: 10px;
+  background-color: #020617; /* very dark slate */
+  border: 1px solid #1f2937;
+  overflow: hidden;
+}
+
+/* Kill any left gutter from line-number mode */
+.theme-default-content div[class*='language-'].line-numbers-mode {
+  padding-left: 0 !important;
+}
+
+/* Hide line-number DOM just in case */
+.theme-default-content div[class*='language-'] .line-numbers,
+.theme-default-content div[class*='language-'] .line-numbers-rows,
+.theme-default-content div[class*='language-'] .line-numbers-wrapper {
+  display: none !important;
+}
+
+/* Code area */
+.theme-default-content div[class*='language-'] pre {
+  margin: 0;
+  padding: 1.3rem 1.3rem 1.1rem; /* top/right/bottom */
+  background: transparent;
+  border: none;
+  overflow-x: auto;   /* horizontal scroll for long lines */
+  overflow-y: hidden;
+  line-height: 1.5;
+}
+
+/* Make sure no extra left border / shadow */
+.theme-default-content div[class*='language-'],
+.theme-default-content div[class*='language-'] pre {
+  border-left: none !important;
+  box-shadow: none;
+}
+
+/* Code text */
+.theme-default-content div[class*='language-'] code {
+  line-height: 1.5;
+  font-size: var(--code-font-size);
+  color: #e5e7eb;
+}
+
+/* ===========================================
+   LANGUAGE LABEL (top-right)
+   =========================================== */
+
+.theme-default-content div[class*='language-']::before {
+  /* VuePress puts ext like "sql", "js" in data-ext */
+  content: attr(data-ext);
+  position: absolute;
+  top: 0.55rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.65;
+}
+
+/* ===========================================
+   COPY BUTTON (top-left)
+   =========================================== */
+
+.theme-default-content div[class*='language-'] > button.copy {
+  position: absolute;
+  top: 0.45rem;
+  left: 1rem;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  background: rgba(15, 23, 42, 0.95);
+  font-size: 0.7rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease,
+    border-color 0.15s ease;
+}
+
+.theme-default-content div[class*='language-'] > button.copy:hover {
+  background: rgba(37, 99, 235, 0.95);
+  border-color: rgba(191, 219, 254, 0.9);
+  transform: translateY(-1px);
+}
+
+.theme-default-content div[class*='language-'] > button.copy.copied {
+  background: rgba(22, 163, 74, 0.95);
+  border-color: rgba(187, 247, 208, 0.9);
+}
+
+/* ===========================================
+   SCROLLBAR – dark themed (horizontal)
+   =========================================== */
+
+/* WebKit (Chrome / Edge / Safari) */
+.theme-default-content div[class*='language-'] pre::-webkit-scrollbar {
+  height: 6px;
+}
+
+.theme-default-content div[class*='language-'] pre::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+.theme-default-content div[class*='language-'] pre::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 999px;
+}
+
+.theme-default-content div[class*='language-'] pre::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Firefox */
+.theme-default-content div[class*='language-'] pre {
+  scrollbar-color: #4b5563 #020617; /* thumb, track */
+  scrollbar-width: thin;
+}
+
+/* ===========================================
+   TABLES
+   =========================================== */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #f6f8fa;
+  font-weight: 600;
+}
+
+/* ===========================================
+   LANGUAGE GRID (custom cards)
+   =========================================== */
+
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.lang-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.lang-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.lang-card img {
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.lang-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+}
+
+.lang-card p {
+  opacity: 0.7;
+  font-size: 0.95rem;
+  max-width: none;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+
+@media (max-width: 800px) {
+  :root {
+    --base-font-size: 15px;
+    --code-font-size: 0.9rem;
+  }
+
+  p {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+import comp from "/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/02-chapter/index.html.vue"
+const data = JSON.parse("{\"path\":\"/content/SQL/02-chapter/\",\"title\":\"Chapter 2 — SQL Server Data Types and NULLs\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"2.1 Introduction\",\"slug\":\"_2-1-introduction\",\"link\":\"#_2-1-introduction\",\"children\":[]},{\"level\":2,\"title\":\"2.2 Classification of Data Types\",\"slug\":\"_2-2-classification-of-data-types\",\"link\":\"#_2-2-classification-of-data-types\",\"children\":[]},{\"level\":2,\"title\":\"2.3 Key Data Types Explained\",\"slug\":\"_2-3-key-data-types-explained\",\"link\":\"#_2-3-key-data-types-explained\",\"children\":[{\"level\":3,\"title\":\"A. Exact Numeric\",\"slug\":\"a-exact-numeric\",\"link\":\"#a-exact-numeric\",\"children\":[]},{\"level\":3,\"title\":\"B. Approximate Numeric\",\"slug\":\"b-approximate-numeric\",\"link\":\"#b-approximate-numeric\",\"children\":[]},{\"level\":3,\"title\":\"C. Character Data\",\"slug\":\"c-character-data\",\"link\":\"#c-character-data\",\"children\":[]},{\"level\":3,\"title\":\"D. Date and Time Data Types\",\"slug\":\"d-date-and-time-data-types\",\"link\":\"#d-date-and-time-data-types\",\"children\":[]},{\"level\":3,\"title\":\"E. BIT Type\",\"slug\":\"e-bit-type\",\"link\":\"#e-bit-type\",\"children\":[]},{\"level\":3,\"title\":\"F. UNIQUEIDENTIFIER\",\"slug\":\"f-uniqueidentifier\",\"link\":\"#f-uniqueidentifier\",\"children\":[]}]},{\"level\":2,\"title\":\"2.4 NULLs in SQL Server\",\"slug\":\"_2-4-nulls-in-sql-server\",\"link\":\"#_2-4-nulls-in-sql-server\",\"children\":[{\"level\":3,\"title\":\"Definition\",\"slug\":\"definition\",\"link\":\"#definition\",\"children\":[]},{\"level\":3,\"title\":\"Key Points\",\"slug\":\"key-points\",\"link\":\"#key-points\",\"children\":[]},{\"level\":3,\"title\":\"Behavior in Expressions\",\"slug\":\"behavior-in-expressions\",\"link\":\"#behavior-in-expressions\",\"children\":[]},{\"level\":3,\"title\":\"NULL Handling Functions\",\"slug\":\"null-handling-functions\",\"link\":\"#null-handling-functions\",\"children\":[]}]},{\"level\":2,\"title\":\"2.5 Type Conversion\",\"slug\":\"_2-5-type-conversion\",\"link\":\"#_2-5-type-conversion\",\"children\":[{\"level\":3,\"title\":\"Implicit Conversion\",\"slug\":\"implicit-conversion\",\"link\":\"#implicit-conversion\",\"children\":[]},{\"level\":3,\"title\":\"Explicit Conversion\",\"slug\":\"explicit-conversion\",\"link\":\"#explicit-conversion\",\"children\":[]}]},{\"level\":2,\"title\":\"2.6 Practical Examples\",\"slug\":\"_2-6-practical-examples\",\"link\":\"#_2-6-practical-examples\",\"children\":[]},{\"level\":2,\"title\":\"2.7 Practice Questions\",\"slug\":\"_2-7-practice-questions\",\"link\":\"#_2-7-practice-questions\",\"children\":[]},{\"level\":2,\"title\":\"2.8 Summary\",\"slug\":\"_2-8-summary\",\"link\":\"#_2-8-summary\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"content/SQL/02-chapter/README.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

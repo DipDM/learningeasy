@@ -3,10 +3,10 @@ export const redirects = JSON.parse("{}")
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Welcome to Learning Portal"} }],
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Get Started"} }],
-  ["/content/SQL/", { loader: () => import(/* webpackChunkName: "content_SQL_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/index.html.js"), meta: {"title":"SQL — Overview"} }],
   ["/content/linq/", { loader: () => import(/* webpackChunkName: "content_linq_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/linq/index.html.js"), meta: {"title":""} }],
-  ["/content/SQL/01-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_01-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/01-chapter/index.html.js"), meta: {"title":"Generated files: Chapter 1 — Introduction & Getting Started"} }],
+  ["/content/SQL/", { loader: () => import(/* webpackChunkName: "content_SQL_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/index.html.js"), meta: {"title":"SQL — Overview"} }],
   ["/content/SQL/02-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_02-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/02-chapter/index.html.js"), meta: {"title":"Chapter 2 — SQL Server Data Types and NULLs"} }],
+  ["/content/SQL/01-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_01-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/01-chapter/index.html.js"), meta: {"title":"Generated files: Chapter 1 — Introduction & Getting Started"} }],
   ["/content/SQL/03-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_03-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/03-chapter/index.html.js"), meta: {"title":"Chapter 3 — DDL (CREATE, ALTER, DROP) and Constraints"} }],
   ["/content/SQL/04-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_04-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/04-chapter/index.html.js"), meta: {"title":"Chapter 4 — DML (Data Manipulation Language)"} }],
   ["/content/SQL/05-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_05-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/05-chapter/index.html.js"), meta: {"title":"Chapter 5 — Filtering, Sorting, and Aggregation"} }],
@@ -17,20 +17,3 @@ export const routes = Object.fromEntries([
   ["/content/SQL/10-chapter/", { loader: () => import(/* webpackChunkName: "content_SQL_10-chapter_index.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/content/SQL/10-chapter/index.html.js"), meta: {"title":"CHAPTER 10 — Indexes & Query Optimization"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/home/dmluffy/Work/vuepress-starter/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}
